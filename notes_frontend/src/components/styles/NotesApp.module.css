@@ -1,0 +1,50 @@
+.appShell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.body {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 0;
+  min-height: calc(100vh - 58px);
+}
+
+.main {
+  padding: 16px;
+  background: var(--bg-primary);
+}
+
+.error {
+  background: #ffe5e5;
+  color: #9b1c1c;
+  border: 1px solid #f5c2c2;
+  padding: 10px 12px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.emptyState {
+  margin: 64px auto;
+  max-width: 640px;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.primaryBtn {
+  background: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 14px;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .body {
+    grid-template-columns: 1fr;
+  }
+}

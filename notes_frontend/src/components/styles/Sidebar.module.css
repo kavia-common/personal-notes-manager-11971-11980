@@ -1,0 +1,65 @@
+.sidebar {
+  border-right: 1px solid var(--border-color);
+  background: var(--bg-secondary);
+  min-height: calc(100vh - 58px);
+  overflow: auto;
+}
+
+.loading, .empty {
+  padding: 12px;
+  opacity: 0.8;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 6px;
+  padding: 12px 12px;
+  border-bottom: 1px solid var(--border-color);
+  cursor: pointer;
+}
+
+.item:hover {
+  background: rgba(0,0,0,0.03);
+}
+
+.active {
+  background: rgba(25, 118, 210, 0.08);
+}
+
+.itemMain {
+  min-width: 0;
+}
+
+.title {
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.preview {
+  font-size: 12px;
+  opacity: 0.7;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 4px;
+}
+
+.deleteBtn {
+  background: transparent;
+  color: #d32f2f;
+  border: 1px solid var(--border-color);
+  padding: 4px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  height: fit-content;
+  align-self: center;
+}
