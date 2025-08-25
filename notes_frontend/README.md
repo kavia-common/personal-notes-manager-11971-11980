@@ -13,6 +13,17 @@ This project provides a minimal React template with a clean, modern UI and minim
 
 In the project directory, you can run:
 
+### Environment variables
+
+Create a `.env` file (you can copy `.env.example`) with:
+
+```
+REACT_APP_SUPABASE_URL=your-project-url
+REACT_APP_SUPABASE_KEY=your-anon-key
+```
+
+These are required for Supabase connectivity (see SUPABASE.md).
+
 ### `npm start`
 
 Runs the app in development mode.\
